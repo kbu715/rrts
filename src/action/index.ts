@@ -1,21 +1,26 @@
 import axios from 'axios';
 import { Dispatch } from 'redux';
+import { ActionTypes } from './types';
 
-export interface IResponse {
+export interface Todo {
     userId: number,
     id: number,
     title: string,
     completed: boolean
 }
-export const fetchToDos = async () => {
-    const response = await axios.get<IResponse[]>('https://jsonplaceholder.typicode.com/todos');
-    return async (dispatch:Dispatch) => {
-        
+
+export interface FetchTodosAction {
+    type: ActionTypes.fetchTodos,
+    payload:Todo[]
+}
+
+export const fetchToDos = () => {
+    return async (dispatch:Dispatch<FetchTodosAction>) => {
+        const response = await axios.get<Todo[]>('https://jsonplaceholder.typicode.com/todos');
+
         dispatch({
-            type: fetchToDos,
+            type: ActionTypes.fetchTodos,
             payload: response.data
         })
     }
 }
-
-export default fetchToDos;
