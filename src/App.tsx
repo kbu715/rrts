@@ -1,10 +1,22 @@
 import React from 'react';
+import { NewNote } from './NewNote';
 
 function App() {
+
+
+  
+
   return (
-    <div>
-      
-    </div>
+    <>
+      <NewNote addNote={alert}/>
+  
+    <hr />
+    <ul>
+
+    </ul>
+
+
+    </>
   );
 }
 
