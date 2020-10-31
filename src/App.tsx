@@ -1,23 +1,15 @@
-import React from 'react';
-import { NewNote } from './NewNote';
+import React from 'react'
+import TodoInsert from './components/TodoInsert'
+import TodoList from './components/TodoList'
 
-function App() {
-
-
-  
-
+const App = () => {
   return (
-    <>
-      <NewNote addNote={alert}/>
-  
-    <hr />
-    <ul>
-
-    </ul>
-
-
-    </>
-  );
+    <div>
+      <TodoInsert />
+      <TodoList />
+    </div>
+  )
 }
+
 
 export default App;
