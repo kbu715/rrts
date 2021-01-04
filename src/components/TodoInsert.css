@@ -1,0 +1,30 @@
+.form label {
+  color: #66ff;
+}
+
+.input {
+  padding: 1em;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #66ff;
+  color: #66ff;
+  display: block;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 1em;
+  border: 2px solid #66ff;
+  color: #66ff;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.btn:focus {
+  outline: none;
+}

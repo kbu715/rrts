@@ -1,14 +1,25 @@
-.TodoItem .text {
-    cursor: pointer;
+.TodoItem {
+  list-style-type: none;
 }
 
-.TodoItem.done .text{
-    color: #999999;
-    text-decoration: line-through;
+.TodoItem .text {
+  cursor: pointer;
+  color: #66ff;
+  font-size: 24px;
+}
+
+.TodoItem .importance {
+  color: #66ff;
+  font-size: 24px;
+}
+
+.TodoItem.done .text {
+  color: #999999;
+  text-decoration: line-through;
 }
 
 .TodoItem .remove {
-    color:#ff0000;
-    margin-left: 4px;
-    cursor: pointer;
+  color: #ff0000;
+  margin-left: 4px;
+  cursor: pointer;
 }
